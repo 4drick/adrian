@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Principal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ff0101, #960303);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0,0,0,0.4);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 15px 35px;
+      font-size: 1em;
+      font-weight: bold;
+      background: linear-gradient(135deg, #bb29e8, #feb47b);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      transition: all 0.4s ease;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #feb47b, #ff7e5f);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sé que este detalle no es suficiente para reparar el daño que hice
+    pero es un detalle para que sepas que realmente me siento mal por lo que hice</h1>
+    <button onclick="irAOtraPagina()">Haz clic aquí, por favor</button>
+  </div>
+
+  <script>
+    function irAOtraPagina() {
+      window.location.href = "segundo/html2.html";
+    }
+  </script>
+</body>
+</html>

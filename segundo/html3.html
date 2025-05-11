@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carta para Ti</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #d8b4fe, #818cf8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .carta {
+      background: #fff9f9;
+      padding: 40px 50px;
+      border-radius: 25px;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      transform: scale(0.8) translateY(100px);
+      animation: aparecer 1.5s ease-out forwards;
+      text-align: center;
+      border: 2px dashed #f472b6;
+    }
+
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    .carta h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #d946ef;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .carta p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .boton {
+      margin-top: 35px;
+      padding: 12px 30px;
+      font-size: 1.1em;
+      background: linear-gradient(to right, #f43f5e, #c026d3);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .boton:hover {
+      transform: scale(1.06);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta">
+    <h2>Realmente te quiero</h2>
+    <p>
+        Te pido, por favor, que me des una oportunidad para demostrarte lo que siento y lo que puedo hacer para corregir mi error. Sé que no tengo excusas, pero mi arrepentimiento es sincero y lo que más quiero es que podamos superar esto.
+    </p>
+   
+
+  
+  </div>
+
+
+</body>
+</html>

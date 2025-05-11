@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carta para Ti</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #2006ca, #8f6dff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .carta {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      max-width: 500px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateY(800px);
+      animation: aparecer 1s ease-out forwards;
+      text-align: center;
+    }
+
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .carta h2 {
+      margin-top: 0;
+      color: #d24c4c;
+      font-size: 1.8em;
+    }
+
+    .carta p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .boton {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 1em;
+      background: linear-gradient(to right, #fd3c26, #9c003f);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .boton:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta">
+    <p>
+      Mi intención nunca fue lastimarte. Lo que siento por ti es muy especial. Con el paso de los días desde que comenzó esta camino contigo, te fuiste volviendo alguien muy importante en mi vida. Sé que no soy perfecto, y cometí el error de permitir que ese detalle te lastimara, habra tropiesos durante esta camino , pero no me gustaria que este tropiezo acabe todo lo que se fue formando.
+    </p>
+    <p>
+      Esta carta no es suficiente... pero es algo sincero de mi parte.
+    </p>
+
+    <button class="boton" onclick="accionCarta()">Haz un click a qui</button>
+  </div>
+
+  <script>
+    function accionCarta() {
+        window.location.href = "html3.html";
+    }
+  </script>
+
+</body>
+</html>
